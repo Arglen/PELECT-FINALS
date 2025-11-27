@@ -1,11 +1,63 @@
-<div>   <div id="hi"></div></div>
-#!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Test Document</title>    
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("hi").innerText = "Hello, World!";
-        });    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Menu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
+
+    <header>
+        <div class="logo">
+            <!-- Paste your logo image link below -->
+            <!-- <img src="YOUR-LOGO-LINK-HERE" alt="Logo"> -->
+            <img src="logo.png" alt="Cafe Logo">
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#" class="active">Menu</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="menu-section">
+
+        <!-- CARD 1 -->
+        <div class="menu-card">
+            <!-- Replace image link here -->
+            <!-- <img src="YOUR-COFFEE-BEVERAGE-LINK-HERE"> -->
+            <img src="coffee.png" alt="Coffee">
+            <h3>Coffee Beverages</h3>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="menu-card">
+            <!-- Replace image link here -->
+            <!-- <img src="YOUR-NON-COFFEE-DRINK-LINK-HERE"> -->
+            <img src="noncoffee.png" alt="Non-Coffee">
+            <h3>Non-Coffee Drinks</h3>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="menu-card">
+            <!-- Replace image link here -->
+            <!-- <img src="YOUR-PASTRY-IMAGE-LINK-HERE"> -->
+            <img src="cookies.png" alt="Snacks">
+            <h3>Pastries & Snacks</h3>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="menu-card">
+            <!-- Replace image link here -->
+            <!-- <img src="YOUR-SPECIAL-OFFERS-IMAGE-LINK-HERE"> -->
+            <img src="matcha.png" alt="Specials">
+            <h3>Special Offers</h3>
+        </div>
+
+    </section>
+
+</body>
 </html>
