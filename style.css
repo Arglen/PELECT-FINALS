@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +7,11 @@
 }
 
 body {
-    background: #2b1a13; /* Deep coffee color */
+    background: #2b1a13;
     color: #fff;
 }
 
-/* HEADER AREA */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -37,45 +38,102 @@ nav a.active {
     color: #fff;
 }
 
-/* MENU SECTION */
+body {
+    background: #111;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ 
 .menu-section {
-    margin-top: 40px;
     display: flex;
     justify-content: center;
     gap: 25px;
-    padding: 20px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
 }
-
 .menu-card {
-    width: 250px;
-    background: #f0e6dd;
-    border-radius: 25px;
-    padding: 25px;
-    text-align: center;
-    transition: 0.35s ease;
-    cursor: pointer;
     position: relative;
-}
-
-.menu-card img {
-    width: 100%;
-    transition: 0.4s ease;
-    transform-origin: center;
+    width: 250px;
+    height: 450px;
+    background: #f5eee7;
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    padding-top: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-card:hover {
-    transform: scale(1.08);
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.35);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 }
 
-.menu-card:hover img {
-    transform: scale(1.12);
+.main-img {
+    width: 180px;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.4s ease;
 }
 
-.menu-card h3 {
+.menu-card:hover .main-img {
+    transform: scale(1.07);
+}
+
+.bg-decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.6;
+    z-index: 1;
+    transform: scale(1);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.menu-card:hover .bg-decor {
+    transform: scale(1.15);
+    opacity: 0.9;
+}
+
+.label {
     background: #d6c9bd;
     display: inline-block;
     margin-top: 15px;
+    padding: 12px 22px;
+    border-radius: 12px;
+    color: #3b2b25;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.label1 {
+background: #d6c9bd;
+    display: inline-block;
+    margin-top: 45px;
+    padding: 12px 22px;
+    border-radius: 12px;
+    color: #3b2b25;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.label2 {
+background: #d6c9bd;
+    display: inline-block;
+    margin-top: 85px;
+    padding: 12px 22px;
+    border-radius: 12px;
+    color: #3b2b25;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.label3 {
+background: #d6c9bd;
+    display: inline-block;
+    margin-top: 35px;
     padding: 12px 22px;
     border-radius: 12px;
     color: #3b2b25;
