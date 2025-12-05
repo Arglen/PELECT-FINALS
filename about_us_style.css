@@ -23,7 +23,7 @@
 
 .navbar nav ul li a {
     text-decoration: none;
-    color: #333; /* Default dark color */
+    color: #dfb94f; /* Default dark color */
     font-size: 1rem;
     padding: 8px 15px;
     border-radius: 20px;
@@ -31,20 +31,20 @@
 }
 
 /* Styling the first 'Home' button differently as per the image */
-.navbar nav ul li:first-child a {
-    background-color: #EDE8E1; /* Light beige background for 'Home' */
+.navbar nav ul li:nth-child(3) a {
+    background-color: rgba(203, 158, 42, 0.8); /* Light beige background for 'Home' */
     color: #333; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.navbar nav ul li:not(:first-child) a {
-    color: #EDE8E1; /* Light text for the other links on the dark background */
+.navbar nav ul li:not(:nth-child(3)) a {
+    color: #8b6126; /* Light text for the other links on the dark background */
 }
 
 /* Hover effect */
 .navbar nav ul li a:hover {
-    background-color: rgba(237, 232, 225, 0.8);
-    color: #333;
+    background-color: rgba(197, 168, 96, 0.8);
+    color: #333(45.56% 78.48 34.94);
 }
 .logo-top-left {
     position: static; /* Let it sit naturally in the header flow */
@@ -122,7 +122,7 @@
 }
 
 .testimonial-button {
-    background-color: #D3A77C; /* Light brown/tan color */
+    background-color: rgba(166, 129, 34, 0.8); /* Light brown/tan color */
     color: #333;
     text-decoration: none;
     font-weight: bold;
@@ -133,7 +133,7 @@
 }
 
 .testimonial-button:hover {
-    background-color: #b78a63;
+    background-color: rgba(197, 168, 96, 0.8);
 }
 
 /* Media Query for Responsiveness */
