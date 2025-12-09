@@ -1,120 +1,110 @@
-/* --- ABOUT US Page Specific Styles --- */
-
-/* 1. Overall Layout */
-.page-container {
-    /* Assuming the whole page background is the dark brown from the header */
-    background-color: #492E20; 
-    min-height: 100vh;
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #4a2f1d; 
+    width: 100%;
+    height: 100%;
 }
 
-/* 2. Header/Navbar adjustments for this page */
+.page-container {
+    background-color: #492E20;
+    min-height: 100vh;
+    position: relative;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
 .navbar {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    z-index: 10; /* Ensure it's on top of everything */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo img {
+    width: 55px;
 }
 
 .navbar nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
+    padding: 0;
 }
 
 .navbar nav ul li a {
     text-decoration: none;
-    color: #333; /* Default dark color */
+    color: #EDE8E1;
     font-size: 1rem;
     padding: 8px 15px;
     border-radius: 20px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: 0.3s;
 }
 
-/* Styling the first 'Home' button differently as per the image */
-.navbar nav ul li:nth-child(4) a {
-    background-color: #EDE8E1; /* Light beige background for 'Home' */
-    color: #333; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+.navbar nav ul li.active-item a {
+    background-color: #EDE8E1;
+    color: #333;
 }
 
-.navbar nav ul li:not(:nth-child(4)) a {
-    color: #EDE8E1; /* Light text for the other links on the dark background */
-}
-
-/* Hover effect */
 .navbar nav ul li a:hover {
-    background-color: rgba(237, 232, 225, 0.8);
-    color: #cea563;
-}
-.logo-top-left {
-    position: static; /* Let it sit naturally in the header flow */
-}
-.logo-top-left img {
-    /* Ensure consistency with the height of the main navigation links */
-    height: 55px; 
-    width: auto;
-}
-.navbar nav {
-    /* Align the nav links to the right */
-    display: flex;
-    align-items: center;
-}
-
-
-body {
-    margin: 0;
-    background: #2e2e2e;
-    font-family: "Poppins", sans-serif;
+    background-color: rgba(237, 232, 225, 0.7);
+    color: #492E20;
 }
 
 .contact-section {
     display: flex;
     justify-content: space-between;
-    padding: 100px;
-    background: #4b2d1f;
-    color: #fff;
-}
-
-.contact-left {
     position: relative;
-    width: 50%;
-    padding-left: 20px;
 }
 
-.contact-left h1 {
-    font-size: 70px;
-    line-height: 1.1;
+.left-area {
+    position: relative;
+    width: 55%;
 }
 
-.contact-left .thin {
-    font-weight: 300;
+.title h1 {
+    font-size: 120px;
+    margin: 0;
+    line-height: 100px;
+    color: #e6d1b3;
 }
 
-.contact-left .bold {
-    font-weight: 700;
+.title span {
+    color: black;
 }
 
 .cup {
     position: absolute;
-    width: 180px;
 }
 
-/* Adjust based on your real images */
 .cup-1 {
-    left: 40px;
-    top: 180px;
+    width: 300px;
+    left: 60px;
+    top: 330px;
 }
+
 .cup-2 {
-    left: 200px;
-    top: 280px;
+    width: 240px;
+    left: 330px;
+    top: 440px;
 }
+
 .cup-3 {
-    left: 360px;
-    top: 200px;
+    width: 150px;
+    left: 620px;
+    top: 390px;
+}
+
+.beans {
+    position: absolute;
+    width: 260px;
+    left: 370px;
+    top: 60px;
 }
 
 .contact-right {
-    width: 45%;
+    width: 40%;
     background: #f3f3f3;
     padding: 30px;
     border-radius: 16px;
@@ -130,7 +120,6 @@ body {
 .field {
     display: flex;
     flex-direction: column;
-    width: 100%;
     margin-bottom: 15px;
 }
 
@@ -164,22 +153,22 @@ body {
 }
 
 .submit-btn:hover {
-    background: #3a2217;
+    background: #362016;
 }
 
 .contact-socials {
     margin-top: 20px;
 }
 
-.contact-socials .icon {
+.icon {
     width: 18px;
-    vertical-align: middle;
     margin-right: 8px;
+    vertical-align: middle;
 }
 
 .bean {
-    width: 120px;
+    width: 200px;
     position: absolute;
-    bottom: 10px;
-    right: -60px;
+    bottom: -50px;
+    right: -40px;
 }
