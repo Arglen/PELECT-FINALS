@@ -23,9 +23,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 60px;
+    margin-bottom: 40px;
 }
-
+    
 .logo img {
     height: 55px;
 }
@@ -42,9 +42,11 @@ body {
     display: flex;
     justify-content: center;
     gap: 25px;
-    padding: 50px 20px;
+    padding: 90px 20px; /* Increased top padding to 90px */
     flex-wrap: wrap;
+    margin-top: 40px; /* Increased top margin to 40px */
 }
+
 .menu-card {
     position: relative;
     width: 250px;
@@ -138,8 +140,12 @@ background: #d6c9bd;
     position: absolute;
     top: 30px;
     right: 30px;
-    z-index: 10; /* Ensure it's on top of everything */
+    z-index: 20; /* Ensure it's on top of everything */
 }
+.logo img {
+    height: 55px;
+}
+
 
 .navbar nav ul {
     list-style: none;
